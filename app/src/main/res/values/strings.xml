@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AELMachineTest</string>
+    <string name="str_top_selling">Top Selling</string>
+    <string name="str_buy">Buy</string>
 </resources>
