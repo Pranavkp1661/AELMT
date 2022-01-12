@@ -10,4 +10,6 @@
     <string name="str_categories">Categories</string>
     <string name="str_format_type">Format/Type</string>
     <string name="str_related_books">Related Books</string>
+    <string name="str_note">NOTE</string>
+    <string name="str_this_is_a_digital_e_book_no_physical_copy_of_e_book_will_be_delivered">This is a digital e-book.No physical copy of e book will be delivered.</string>
 </resources>

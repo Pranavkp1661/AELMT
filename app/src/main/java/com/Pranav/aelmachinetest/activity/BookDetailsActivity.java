@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -65,7 +66,7 @@ public class BookDetailsActivity extends AppCompatActivity {
         bookDetailsRequestModel.setFunctionName("booksDetails");
         getBookDetails(bookDetailsRequestModel);
         relatedBooksAdapter=new RelatedBooksAdapter(context,relatedBooks);
-        rvRelatedBooks.setLayoutManager(new LinearLayoutManager(context,RecyclerView.HORIZONTAL,true));
+        rvRelatedBooks.setLayoutManager(new GridLayoutManager(context,2));
         rvRelatedBooks.setAdapter(relatedBooksAdapter);
     }
 
