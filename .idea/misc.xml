@@ -3,9 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AELMachineTest/app/src/main/res/drawable/bg_book_details_shape.xml" value="0.1537037037037037" />
         <entry key="..\:/AELMachineTest/app/src/main/res/drawable/bg_book_shape.xml" value="0.1648148148148148" />
+        <entry key="..\:/AELMachineTest/app/src/main/res/layout/activity_book_details.xml" value="0.25" />
         <entry key="..\:/AELMachineTest/app/src/main/res/layout/activity_main.xml" value="0.25052083333333336" />
         <entry key="..\:/AELMachineTest/app/src/main/res/layout/rv_books_item_layout.xml" value="0.26458333333333334" />
+        <entry key="..\:/AELMachineTest/app/src/main/res/layout/rv_realted_books_layout.xml" value="0.25" />
       </map>
     </option>
   </component>

@@ -1,4 +1,4 @@
-package com.Pranav.aelmachinetest;
+package com.Pranav.aelmachinetest.model;
 
 import com.google.gson.Gson;
 import com.google.gson.annotations.SerializedName;

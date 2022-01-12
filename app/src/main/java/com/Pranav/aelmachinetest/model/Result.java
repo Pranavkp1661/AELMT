@@ -1,6 +1,5 @@
 package com.Pranav.aelmachinetest.model;
 
-import com.Pranav.aelmachinetest.TopSellingApiResponseModel;
 import com.google.gson.Gson;
 import com.google.gson.annotations.SerializedName;
 

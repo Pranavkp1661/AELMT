@@ -36,53 +36,32 @@
             android:layout_weight=".5"
             android:maxLines="1" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/dimen_0dp"
-            android:layout_gravity="start"
-            android:layout_weight=".5"
-            android:src="@drawable/stars" />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="7dp"
             android:layout_weight="1"
+            android:weightSum="3"
+            android:gravity="end"
             android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="@dimen/dimen_0dp"
-                android:layout_height="match_parent"
-                android:layout_weight=".5"
-                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/tvCrossedPrice"
-                    android:layout_width="match_parent"
+                    android:layout_width="@dimen/dimen_0dp"
                     android:gravity="start|center_vertical"
                     android:paddingStart="@dimen/dimen_10dp"
-
-                    android:layout_height="@dimen/dimen_0dp"
-                    android:layout_weight=".5" />
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
 
                 <TextView
                     android:id="@+id/tvPrice"
-                    android:layout_width="match_parent"
+                    android:layout_width="@dimen/dimen_0dp"
                     android:gravity="start|center_vertical"
                     android:paddingStart="@dimen/dimen_10dp"
                     android:textColor="#F81111"
                     android:textSize="20sp"
-                    android:layout_height="@dimen/dimen_0dp"
-                    android:layout_weight=".5" />
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
 
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/btBuy"
-                android:layout_width="@dimen/dimen_0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight=".5"
-                android:text="@string/str_buy" />
         </LinearLayout>
     </LinearLayout>
 

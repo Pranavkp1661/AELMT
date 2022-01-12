@@ -1,4 +1,4 @@
-package com.Pranav.aelmachinetest;
+package com.Pranav.aelmachinetest.activity;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -8,8 +8,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.Pranav.aelmachinetest.R;
+import com.Pranav.aelmachinetest.adapter.TopSellingAdapter;
 import com.Pranav.aelmachinetest.model.ApiResponse;
-import com.Pranav.aelmachinetest.model.Output;
+import com.Pranav.aelmachinetest.model.TopSellingApiRequestModel;
+import com.Pranav.aelmachinetest.model.TopSellingApiResponseModel;
+import com.Pranav.aelmachinetest.retrofit.ApiInterface;
+import com.Pranav.aelmachinetest.retrofit.RetrofitClientApi;
 
 import java.util.ArrayList;
 import java.util.List;

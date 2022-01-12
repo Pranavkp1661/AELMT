@@ -1,17 +1,21 @@
-package com.Pranav.aelmachinetest;
+package com.Pranav.aelmachinetest.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Paint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.Pranav.aelmachinetest.model.ApiResponse;
+import com.Pranav.aelmachinetest.R;
+import com.Pranav.aelmachinetest.activity.BookDetailsActivity;
+import com.Pranav.aelmachinetest.model.TopSellingApiResponseModel;
 import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
@@ -50,6 +54,11 @@ public class TopSellingAdapter extends RecyclerView.Adapter<TopSellingAdapter.Vi
             holder.tvCrossedPrice.setPaintFlags(holder.tvCrossedPrice.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
         }
         Glide.with(context).load(modelList.get(position).getImage_path()).into(holder.imvBook);
+        holder.llItem.setOnClickListener(v -> {
+            Intent intent=new Intent(context, BookDetailsActivity.class);
+            intent.putExtra("id",modelList.get(position).getId());
+            context.startActivity(intent);
+        });
     }
 
     @Override
@@ -63,6 +72,7 @@ public class TopSellingAdapter extends RecyclerView.Adapter<TopSellingAdapter.Vi
         TextView tvCrossedPrice;
         TextView tvPrice;
         TextView tvBookName;
+        LinearLayout llItem;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -71,6 +81,7 @@ public class TopSellingAdapter extends RecyclerView.Adapter<TopSellingAdapter.Vi
             tvCrossedPrice = itemView.findViewById(R.id.tvCrossedPrice);
             tvPrice = itemView.findViewById(R.id.tvPrice);
             tvBookName=itemView.findViewById(R.id.tvBookName);
+            llItem=itemView.findViewById(R.id.llItem);
         }
     }
 }

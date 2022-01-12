@@ -2,4 +2,12 @@
     <string name="app_name">AELMachineTest</string>
     <string name="str_top_selling">Top Selling</string>
     <string name="str_buy">Buy</string>
+    <string name="str_buy_now">Buy Now</string>
+    <string name="str_course_code">Course Code</string>
+    <string name="str_author">Author</string>
+    <string name="str_university">University</string>
+    <string name="str_regulation">Regulation</string>
+    <string name="str_categories">Categories</string>
+    <string name="str_format_type">Format/Type</string>
+    <string name="str_related_books">Related Books</string>
 </resources>
