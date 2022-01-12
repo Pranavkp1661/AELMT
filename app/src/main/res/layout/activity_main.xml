@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -17,8 +17,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvTopSelling"
-        tools:listitem="@layout/rv_books_item_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/rv_books_item_layout" />
 
 </LinearLayout>
